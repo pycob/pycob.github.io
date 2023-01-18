@@ -77,11 +77,20 @@
 </a><a href="#form" class="ml-1 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
     <span class="text-2xl"><i class="bx bx-home"></i></span>
     <span>Form</span>
+</a><a href="#form" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Form</span>
+</a><a href="#formtext" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Form Text</span>
+</a><a href="#formsubmit" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Form Submit</span>
 </a><a href="#advanced" class="ml-1 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
     <span class="text-2xl"><i class="bx bx-home"></i></span>
     <span>Advanced</span>
 </a>            </aside>            
-            <div class="container px-5 py-24 mx-auto max-w-fit"><span id=basicHtml></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Basic HTML</p><span id=html></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">HTML</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders raw HTML</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b> </p><div class="mx-auto my-10 max-w-3xl">
+            <div class="container px-5 py-24 mx-auto max-w-fit"><span id=basicHtml></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Basic HTML</p><span id=html></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">HTML</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders raw HTML</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b>. Raw HTML code to be rendered</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -93,7 +102,7 @@
         <code class="text-white">page['contents'].append({'type': 'html', 'value' : &#39&#60&#98&#62&#104&#101&#114&#101&#39&#115&#32&#115&#111&#109&#101&#32&#104&#116&#109&#108&#60&#47&#98&#62&#39})
 </code>
     </div>
-</div><b>here's some html</b><hr class="my-5 border-gray-300 w-full"><span id=text></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Text</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a paragraph of text</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b> </p><div class="mx-auto my-10 max-w-3xl">
+</div><b>here's some html</b><hr class="my-5 border-gray-300 w-full"><span id=text></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Text</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a paragraph of text</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b>. Text to be rendered</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -105,7 +114,7 @@
         <code class="text-white">page['contents'].append({'type': 'text', 'value' : &#39&#72&#101&#114&#101&#39&#115&#32&#115&#111&#109&#101&#32&#116&#101&#120&#116&#39})
 </code>
     </div>
-</div><p>Here's some text</p><hr class="my-5 border-gray-300 w-full"><span id=header></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Header</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a header</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b> </p><p><code>size</code>: <b>Integer</b>. Default: 1 </p><div class="mx-auto my-10 max-w-3xl">
+</div><p>Here's some text</p><hr class="my-5 border-gray-300 w-full"><span id=header></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Header</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a header</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b>. Text to be rendered</p><p><code>size</code>: <b>Integer</b>. Default: 1. Size of the header. Choose 1-6 </p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -129,7 +138,7 @@
         <code class="text-white">page['contents'].append({'type': 'header', 'text' : &#39&#72&#101&#114&#101&#39&#115&#32&#97&#32&#115&#109&#97&#108&#108&#32&#104&#101&#97&#100&#101&#114&#39, 'size' : &#52})
 </code>
     </div>
-</div><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Here's a small header</p><hr class="my-5 border-gray-300 w-full"><span id=code></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Code</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a block of code</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b> </p><p><code>header</code>: <b>Optional String</b> </p><div class="mx-auto my-10 max-w-3xl">
+</div><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Here's a small header</p><hr class="my-5 border-gray-300 w-full"><span id=code></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Code</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a block of code</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b>. Code to be rendered</p><p><code>header</code>: <b>Optional String</b>. Header to be rendered above the code block</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -187,7 +196,7 @@
         <code class="text-white">page['contents'].append({'type': 'divider'})
 </code>
     </div>
-</div><hr class="my-5 border-gray-300 w-full"><hr class="my-5 border-gray-300 w-full"><span id=layout></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Layout</p><span id=alert></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Alert</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders an alert</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b> </p><p><code>badge</code>: <b>Optional String</b> </p><p><code>color</code>: <b>Optional String</b>. Default: indigo </p><div class="mx-auto my-10 max-w-3xl">
+</div><hr class="my-5 border-gray-300 w-full"><hr class="my-5 border-gray-300 w-full"><span id=layout></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Layout</p><span id=alert></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Alert</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders an alert</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b>. Text to be rendered</p><p><code>badge</code>: <b>Optional String</b>. Text to be rendered inside the badge</p><p><code>color</code>: <b>Optional String</b>. Default: indigo. Color of the. Choose 'indigo', 'orange', or 'red' </p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -238,7 +247,7 @@
     <span class="flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3">Delete?</span>
     <span class="font-semibold mr-2 text-left flex-auto">Here's an error alert</span>            
 </div>
-</div><hr class="my-5 border-gray-300 w-full"><span id=hero></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Hero</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a hero</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b> </p><p><code>subtitle</code>: <b>Optional String</b> </p><p><code>image</code>: <b>Optional String</b> </p><p><code>color</code>: <b>Optional String</b>. Default: indigo </p><div class="mx-auto my-10 max-w-3xl">
+</div><hr class="my-5 border-gray-300 w-full"><span id=hero></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Hero</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a hero</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b>. Title to be rendered</p><p><code>subtitle</code>: <b>Optional String</b>. Subtitle to be rendered</p><p><code>image</code>: <b>Optional String</b>. Image to be rendered</p><p><code>color</code>: <b>Optional String</b>. Default: indigo. Color of the. Choose 'indigo', 'orange', or 'red' </p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -322,7 +331,7 @@
             <img src="https://loremflickr.com/300/300" >
         </div>                
     </div>
-</section><hr class="my-5 border-gray-300 w-full"><span id=section></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Section</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Creates an invisible element that can be used to link to in the sidebar</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>id</code>: <b>String</b> </p><p><code>name</code>: <b>String</b> </p><p><code>level</code>: <b>Optional Integer</b>. Default: 1 </p><p><code>icon</code>: <b>Optional String</b> </p><div class="mx-auto my-10 max-w-3xl">
+</section><hr class="my-5 border-gray-300 w-full"><span id=section></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Section</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Creates an invisible element that can be used to link to in the sidebar</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>id</code>: <b>String</b>. ID for the section. This is what will appear in the link as /page#id</p><p><code>name</code>: <b>String</b>. Name of the section. This is what will appear in the navigation bar</p><p><code>level</code>: <b>Optional Integer</b>. Default: 1. Level of the section. This is the indendation that will appear in the navigation bar </p><p><code>icon</code>: <b>Optional String</b>. Icon for the section. This is what will appear in the navigation bar</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -346,7 +355,75 @@
         <code class="text-white">page['contents'].append({'type': 'section', 'id' : &#39&#115&#101&#99&#116&#105&#111&#110&#50&#39, 'name' : &#39&#83&#97&#109&#112&#108&#101&#32&#83&#101&#99&#116&#105&#111&#110&#32&#50&#39, 'level' : &#50, 'icon' : &#39&#105&#99&#111&#110&#39})
 </code>
     </div>
-</div><span id=section2></span><hr class="my-5 border-gray-300 w-full"><span id=form></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Form</p><p class="title-font sm:text-1xl text-xl font-medium text-gray-900 mb-3">No elements in category: form</p><span id=advanced></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Advanced</p><p class="title-font sm:text-1xl text-xl font-medium text-gray-900 mb-3">No elements in category: advanced</p>            </div>
+</div><span id=section2></span><hr class="my-5 border-gray-300 w-full"><span id=form></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Form</p><span id=form></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Form</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a form</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>action</code>: <b>String</b>. Action for the form. This is the page that the form will submit to</p><p><code>components</code>: <b>Components</b>. List of Component of the form</p><p><code>method</code>: <b>Optional String</b>. Default: GET. Method for the form (i.e. GET, POST) </p><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">form</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'form'})
+</code>
+    </div>
+</div><form action="" method="GET">
+     COMPONENTS HERE 
+</form><hr class="my-5 border-gray-300 w-full"><span id=formtext></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Form Text</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a form</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>label</code>: <b>String</b>. Label for the form text</p><p><code>name</code>: <b>String</b>. Name for the form text</p><p><code>value</code>: <b>String</b>. Value for the form text</p><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">formtext</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'formtext', 'label' : &#39&#78&#97&#109&#101&#39, 'name' : &#39&#110&#97&#109&#101&#39, 'value' : &#39&#74&#111&#104&#110&#32&#68&#111&#101&#39})
+</code>
+    </div>
+</div><div class="relative mb-4">
+    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+    <input name="name" type="text" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" id="name" value="John Doe">
+</div><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">formtext</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'formtext', 'label' : &#39&#69&#109&#97&#105&#108&#39, 'name' : &#39&#101&#109&#97&#105&#108&#39, 'value' : &#39&#116&#101&#115&#116&#64&#116&#101&#115&#116&#46&#99&#111&#109&#39})
+</code>
+    </div>
+</div><div class="relative mb-4">
+    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+    <input name="email" type="text" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" id="email" value="test@test.com">
+</div><hr class="my-5 border-gray-300 w-full"><span id=formsubmit></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Form Submit</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a form submit button</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>label</code>: <b>Optional String</b>. Default: Submit. Label for the form submit button </p><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">formsubmit</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'formsubmit', 'label' : &#39&#83&#117&#98&#109&#105&#116&#39})
+</code>
+    </div>
+</div><button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">formsubmit</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'formsubmit', 'label' : &#39&#83&#97&#118&#101&#39})
+</code>
+    </div>
+</div><button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Save</button><hr class="my-5 border-gray-300 w-full"><span id=advanced></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Advanced</p><p class="title-font sm:text-1xl text-xl font-medium text-gray-900 mb-3">No components in category: advanced</p>            </div>
         </div>
         <footer class="text-gray-600 body-font"><div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"><div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"><a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">🌽<span class="ml-3 text-xl">PyCob</span></a><p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p></div><div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div></div></div><div class="bg-gray-100"><div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"><p class="text-gray-500 text-sm text-center sm:text-left">© 2023 PyCob —<a href="https://twitter.com/user" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@username</a></p><span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"><a class="text-gray-500"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24"><path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2" stroke="none"></circle></svg></a></span></div></div></footer>
     </body>
