@@ -47,6 +47,12 @@
 </a><a href="#text" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
     <span class="text-2xl"><i class="bx bx-home"></i></span>
     <span>Text</span>
+</a><a href="#link" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Link</span>
+</a><a href="#image" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Image</span>
 </a><a href="#header" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
     <span class="text-2xl"><i class="bx bx-home"></i></span>
     <span>Header</span>
@@ -92,6 +98,21 @@
 </a><a href="#pandastable" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
     <span class="text-2xl"><i class="bx bx-home"></i></span>
     <span>Pandas Table</span>
+</a><a href="#internal" class="ml-1 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Internal</span>
+</a><a href="#navbar" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Navbar</span>
+</a><a href="#footer" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Footer</span>
+</a><a href="#footercategory" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Footer Category</span>
+</a><a href="#footerlink" class="ml-2 flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+    <span class="text-2xl"><i class="bx bx-home"></i></span>
+    <span>Footer Link</span>
 </a>            </aside>            
             <div class="container px-5 py-24 mx-auto max-w-fit"><span id=basicHtml></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Basic HTML</p><span id=html></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">HTML</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders raw HTML</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>value</code>: <b>String</b>. Raw HTML code to be rendered</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
@@ -117,7 +138,31 @@
         <code class="text-white">page['contents'].append({'type': 'text', 'value' : &#39&#72&#101&#114&#101&#39&#115&#32&#115&#111&#109&#101&#32&#116&#101&#120&#116&#39})
 </code>
     </div>
-</div><p>Here's some text</p><hr class="my-5 border-gray-300 w-full"><span id=header></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Header</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a header</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b>. Text to be rendered</p><p><code>size</code>: <b>Integer</b>. Default: 1. Size of the header. Choose 1-6 </p><div class="mx-auto my-10 max-w-3xl">
+</div><p>Here's some text</p><hr class="my-5 border-gray-300 w-full"><span id=link></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Link</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a link</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b>. Text to be rendered</p><p><code>url</code>: <b>String</b>. URL to link to</p><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">link</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'link', 'text' : &#39&#72&#101&#114&#101&#39&#115&#32&#97&#32&#108&#105&#110&#107&#39, 'url' : &#39&#104&#116&#116&#112&#115&#58&#47&#47&#119&#119&#119&#46&#112&#121&#99&#111&#98&#46&#99&#111&#109&#39})
+</code>
+    </div>
+</div><a href="https://www.pycob.com">Here's a link</a><hr class="my-5 border-gray-300 w-full"><span id=image></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Image</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders an image</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>url</code>: <b>String</b>. URL of the image</p><p><code>alt</code>: <b>String</b>. Default: Image. Alt text for the image </p><div class="mx-auto my-10 max-w-3xl">
+    <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
+        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+        <code class="pl-5 text-lime-500">image</code>
+    </div>
+    <div class="w-full border-t-0 bg-gray-700 pb-5">
+        <code class="text-gray-500">&gt&gt&gt</code>
+        <code class="text-white">page['contents'].append({'type': 'image', 'url' : &#39&#104&#116&#116&#112&#115&#58&#47&#47&#112&#121&#99&#111&#98&#46&#99&#111&#109&#47&#105&#109&#103&#47&#112&#121&#99&#111&#98&#95&#104&#101&#120&#46&#112&#110&#103&#39, 'alt' : &#39&#80&#121&#99&#111&#98&#32&#108&#111&#103&#111&#39})
+</code>
+    </div>
+</div><img class="max-w-fit" src="https://pycob.com/img/pycob_hex.png" alt="Pycob logo"><hr class="my-5 border-gray-300 w-full"><span id=header></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Header</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a header</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>text</code>: <b>String</b>. Text to be rendered</p><p><code>size</code>: <b>Integer</b>. Default: 1. Size of the header. Choose 1-6 </p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -334,7 +379,7 @@
             <img src="https://loremflickr.com/300/300" >
         </div>                
     </div>
-</section><hr class="my-5 border-gray-300 w-full"><span id=section></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Section</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Creates an invisible element that can be used to link to in the sidebar</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>id</code>: <b>String</b>. ID for the section. This is what will appear in the link as /page#id</p><p><code>name</code>: <b>String</b>. Name of the section. This is what will appear in the navigation bar</p><p><code>level</code>: <b>Optional Integer</b>. Default: 1. Level of the section. This is the indendation that will appear in the navigation bar </p><p><code>icon</code>: <b>Optional String</b>. Icon for the section. This is what will appear in the navigation bar</p><div class="mx-auto my-10 max-w-3xl">
+</section><hr class="my-5 border-gray-300 w-full"><span id=section></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Section</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Creates an invisible element that can be used to link to in the sidebar</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>id</code>: <b>String</b>. ID for the section. This is what will appear in the link as /page#id</p><p><code>name</code>: <b>String</b>. Name of the section. This is what will appear in the navigation bar</p><p><code>level</code>: <b>Optional Integer</b>. Default: 1. Level of the section. This is the indendation that will appear in the navigation bar </p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
         <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
@@ -371,7 +416,7 @@
 </code>
     </div>
 </div><form action="" method="GET">
-     COMPONENTS HERE 
+    
 </form><hr class="my-5 border-gray-300 w-full"><span id=formtext></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Form Text</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a form</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>label</code>: <b>String</b>. Label for the form text</p><p><code>name</code>: <b>String</b>. Name for the form text</p><p><code>value</code>: <b>String</b>. Value for the form text</p><div class="mx-auto my-10 max-w-3xl">
     <div class="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg bg-gray-900 px-3">
         <span class="h-3 w-3 rounded-full bg-red-400"></span>
@@ -438,7 +483,7 @@
         <code class="text-white">page['contents'].append({'type': 'pandastable', 'dataframe' : &#39&#100&#102&#39})
 </code>
     </div>
-</div>TODO: Advanced Component<hr class="my-5 border-gray-300 w-full">            </div>
+</div>TODO: Advanced Component<hr class="my-5 border-gray-300 w-full"><span id=internal></span><p class="title-font sm:text-5xl text-xl font-medium text-gray-900 mb-3">Internal</p><span id=navbar></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Navbar</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a navbar</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b>. Title of the navbar</p><p><code>logo</code>: <b>Optional String</b>. URL for the logo of the navbar</p><p><code>components</code>: <b>Components</b>. List of links for the navbar</p><hr class="my-5 border-gray-300 w-full"><span id=footer></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Footer</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a footer</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b>. Title of the footer</p><p><code>subtitle</code>: <b>Optional String</b>. Default: . Subtitle of the footer </p><p><code>logo</code>: <b>Optional String</b>. Default: . URL for the logo of the footer </p><p><code>components</code>: <b>Components</b>. List of category components for the footer</p><hr class="my-5 border-gray-300 w-full"><span id=footercategory></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Footer Category</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a category in the footer</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b>. Title of the category</p><p><code>components</code>: <b>Components</b>. List of Footer Link in the category</p><hr class="my-5 border-gray-300 w-full"><span id=footerlink></span><p class="title-font sm:text-4xl text-xl font-medium text-gray-900 mb-3">Footer Link</p><p class="title-font sm:text-3xl text-xl font-medium text-gray-900 mb-3">Renders a link in the footer</p><p class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Input</p><p><code>title</code>: <b>String</b>. Title of the link</p><p><code>url</code>: <b>String</b>. URL of the link</p><hr class="my-5 border-gray-300 w-full">            </div>
         </div>
         <footer class="text-gray-600 body-font"><div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"><div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"><a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"><img class="object-scale-down h-10" src="./img/pycob_hex.png"><span class="ml-3 text-xl">PyCob</span></a><p class="mt-2 text-sm text-gray-500">Build web apps using just Python</p></div><div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div><div class="lg:w-1/4 md:w-1/2 w-full px-4"><h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2><nav class="list-none mb-10"><li><a class="text-gray-600 hover:text-gray-800">First Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Second Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Third Link</a></li><li><a class="text-gray-600 hover:text-gray-800">Fourth Link</a></li></nav></div></div></div><div class="bg-gray-100"><div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"><p class="text-gray-500 text-sm text-center sm:text-left">© 2023 PyCob —<a href="https://twitter.com/user" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@username</a></p><span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"><a class="text-gray-500"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></svg></a><a class="ml-3 text-gray-500"><svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24"><path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2" stroke="none"></circle></svg></a></span></div></div></footer>
     </body>
