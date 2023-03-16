@@ -26,11 +26,11 @@
         <ul>
   <li><a href="#services">Services</a>
   <ul>
-    <li><a href="#user-authentication">User Authentication</a></li>
     <li><a href="#store-dataframes">Store Dataframes</a></li>
     <li><a href="#store-dictionaries">Store Dictionaries</a></li>
     <li><a href="#secrets">Secrets</a></li>
     <li><a href="#background-jobs">Background Jobs</a></li>
+    <li><a href="#user-authentication">User Authentication</a></li>
     <li><a href="#other">Other</a></li>
   </ul></li>
   <li><a href="#deploy">Deploy</a></li>
@@ -101,18 +101,6 @@ pycob    </h1>
 
                         <div class="docstring"><h1 id="services">Services</h1>
 
-<h2 id="user-authentication">User Authentication</h2>
-
-<p>When using Pycob Cloud, there is a built in user authentication system. You can use this to store and retrieve user data.
-An invisible 'token' is passed as a parameter to your app URL if a user is logged in. You can use this token to retrieve the user's data.</p>
-
-<p>Your app will see URLs like this:</p>
-
-<p><code>https://my_app.pycob.app/page?my_param=hello&amp;token=...</code></p>
-
-<p><code>store_user_data</code>
-<code>fetch_user_data</code></p>
-
 <h2 id="store-dataframes">Store Dataframes</h2>
 
 <p>This works for any objects that can be pickled but the most common use case is for storing pandas dataframes.</p>
@@ -135,6 +123,18 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <p>You can also configure these to run on a schedule on <a href="https://www.pycob.com">https://www.pycob.com</a></p>
 
 <p><code><a href="#start_script">start_script</a></code></p>
+
+<h2 id="user-authentication">User Authentication</h2>
+
+<p>When using Pycob Cloud, there is a built in user authentication system. You can use this to store and retrieve user data.
+An invisible 'token' is passed as a parameter to your app URL if a user is logged in. You can use this token to retrieve the user's data.</p>
+
+<p>Your app will see URLs like this:</p>
+
+<p><code>https://my_app.pycob.app/page?my_param=hello&amp;token=...</code></p>
+
+<p><code>store_user_data</code>
+<code>fetch_user_data</code></p>
 
 <h2 id="other">Other</h2>
 
