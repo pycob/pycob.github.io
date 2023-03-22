@@ -245,7 +245,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">to_cloud_pickle</span><span class="p">(</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">store_pickle</span><span class="p">(</span>
     <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;my_data.pkl&#39;</span>
 <span class="p">)</span>
@@ -253,7 +253,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 </div>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">to_cloud_pickle</span><span class="p">(</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">store_pickle</span><span class="p">(</span>
     <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">},</span>
     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;my_dict.pkl&#39;</span>
 <span class="p">)</span>
@@ -261,7 +261,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 </div>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">to_cloud_pickle</span><span class="p">(</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">store_pickle</span><span class="p">(</span>
     <span class="n">data</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;my_integer.pkl&#39;</span>
 <span class="p">)</span>
@@ -298,17 +298,17 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">from_cloud_pickle</span><span class="p">(</span><span class="s1">&#39;my_data.pkl&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">cob</span><span class="o">.</span><span class="n">fetch_pickle</span><span class="p">(</span><span class="s1">&#39;my_data.pkl&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">from_cloud_pickle</span><span class="p">(</span><span class="s1">&#39;path/to/my_data.pkl&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">cob</span><span class="o">.</span><span class="n">fetch_pickle</span><span class="p">(</span><span class="s1">&#39;path/to/my_data.pkl&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">from_cloud_pickle</span><span class="p">(</span><span class="s1">&#39;data/my_data.pkl&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">cob</span><span class="o">.</span><span class="n">fetch_pickle</span><span class="p">(</span><span class="s1">&#39;data/my_data.pkl&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 </div>
@@ -387,7 +387,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">fetch_dict</span><span class="p">(</span>
+<pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">cob</span><span class="o">.</span><span class="n">fetch_dict</span><span class="p">(</span>
     <span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;table_123&#39;</span><span class="p">,</span>
     <span class="n">object_id</span><span class="o">=</span><span class="s1">&#39;object_456&#39;</span>
 <span class="p">)</span>
@@ -425,7 +425,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">delete_dict</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;table_1&#39;</span><span class="p">,</span> <span class="n">object_id</span><span class="o">=</span><span class="s1">&#39;obj_1&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">delete_dict</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;table_1&#39;</span><span class="p">,</span> <span class="n">object_id</span><span class="o">=</span><span class="s1">&#39;obj_1&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 </div>
@@ -462,7 +462,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">query_dict</span><span class="p">(</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">query_dict</span><span class="p">(</span>
     <span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;my_table&#39;</span><span class="p">,</span>
     <span class="n">field_name</span><span class="o">=</span><span class="s1">&#39;name&#39;</span><span class="p">,</span>
     <span class="n">field_value</span><span class="o">=</span><span class="s1">&#39;John&#39;</span>
@@ -502,7 +502,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">list_objects</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;my_table&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">list_objects</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;my_table&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 </div>
@@ -536,7 +536,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">list_object_ids</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;my_table&#39;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">list_object_ids</span><span class="p">(</span><span class="n">table_id</span><span class="o">=</span><span class="s1">&#39;my_table&#39;</span><span class="p">)</span>
 </code></pre>
 </div>
 </div>
@@ -571,7 +571,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">store_secret</span><span class="p">(</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">store_secret</span><span class="p">(</span>
     <span class="n">secret_name</span><span class="o">=</span><span class="s1">&#39;my_secret&#39;</span><span class="p">,</span>
     <span class="n">secret_value</span><span class="o">=</span><span class="s1">&#39;my_secret_value&#39;</span>
 <span class="p">)</span>
@@ -608,7 +608,7 @@ An invisible 'token' is passed as a parameter to your app URL if a user is logge
 <h4 id="example">Example</h4>
 
 <div class="pdoc-code codehilite">
-<pre><span></span><code><span class="n">fetch_secret</span><span class="p">(</span><span class="s2">&quot;my_secret&quot;</span><span class="p">)</span>
+<pre><span></span><code><span class="n">cob</span><span class="o">.</span><span class="n">fetch_secret</span><span class="p">(</span><span class="s2">&quot;my_secret&quot;</span><span class="p">)</span>
 </code></pre>
 </div>
 </div>
